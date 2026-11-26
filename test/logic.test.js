@@ -1,0 +1,17 @@
+const test = require('node:test'), assert = require('node:assert/strict'), L = require('../logic.js')
+test('filter', () => { assert.equal(L.filter(L.PROJECTS, 'all').length, 6); assert.equal(L.filter(L.PROJECTS, 'branding').length, 2); assert.equal(L.filter(L.PROJECTS, 'x').length, 0) })
+test('quote', () => {
+  assert.deepEqual(L.quote('landing', [], 0), { price: 400, days: 5 })
+  assert.deepEqual(L.quote('site', [], 8), { price: 1440, days: 14 })
+  assert.deepEqual(L.quote('site', [], 2), { price: 1200, days: 14 })
+  assert.deepEqual(L.quote('landing', ['brand', 'seo'], 0), { price: 850, days: 9 })
+  assert.deepEqual(L.quote('landing', ['brand', 'rush'], 0), { price: 875, days: 6 })
+  assert.equal(L.quote('nope', [], 0), null)
+  assert.equal(L.quote('site', [], 999).price, 1200 + 35 * 80)
+})
+test('contact', () => {
+  assert.deepEqual(Object.keys(L.validateContact({ name: '', email: 'x', message: 'hi' })).sort(), ['email', 'message', 'name'])
+  assert.deepEqual(L.validateContact({ name: 'Malak', email: 'a@b.co', message: 'Hello there, hi' }), {})
+  assert.match(L.mailto('a@b.co', { name: 'M K', email: 'x@y.co', message: 'Hello there & hi' }), /^mailto:a@b\.co\?subject=Project%20enquiry%20from%20M%20K&body=Hello%20there%20%26%20hi/)
+})
+test('countStep eases to target', () => { assert.equal(L.countStep(200, 0), 0); assert.equal(L.countStep(200, 1), 200); assert.equal(L.countStep(200, 5), 200); assert.ok(L.countStep(200, .5) > 100) })

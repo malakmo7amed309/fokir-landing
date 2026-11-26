@@ -1,12 +1,8 @@
-# Fokir Landing Page
+# Fokir Studio (landing page demo)
 
-A multi-section personal landing page (hero, about, services, portfolio,
-testimonial, blog, contact) built with plain HTML and CSS. Rebuilt to be fully
-responsive: the original desktop-only stylesheet now stacks cleanly on phones.
+A freelancer landing page with working parts: a portfolio filter, a live project quote calculator, FAQ, validated contact form (opens your email app), dark mode and a mobile menu. Plain HTML, CSS and JavaScript, no build step.
 
 **Live demo:** https://malakmo7amed309.github.io/fokir-landing/
-
-## Screenshots
 
 | Desktop | Mobile |
 | --- | --- |
@@ -14,22 +10,16 @@ responsive: the original desktop-only stylesheet now stacks cleanly on phones.
 
 ## Features
 
-- Seven sections: hero with typing animation, about, services, portfolio grid,
-  stats, client feedback, blog and contact
-- Fixed navbar with section links
-- CSS animations: typing effect in the hero, hover overlays on images
-- Responsive layout down to phone widths (media queries stacking every section)
+- Quote calculator: plan, page count (multi-page site), extras and rush delivery update the price and timeline as you click. "Send this brief" fills the contact message.
+- Portfolio filter (All, Product, Branding), animated stats, accordion FAQ.
+- Contact form with validation. It opens your email app with the message filled in. Nothing is stored. The address is a placeholder.
+- Dark and light mode (remembered), section highlight in the nav, skip link, focus styles, reduced-motion support.
+- All names, numbers and projects are placeholders (demo).
 
-## Tech stack
+## Code
 
-- HTML5
-- CSS3 (flexbox, animations, media queries)
-- Font Awesome
+`logic.js` holds the pure functions (quote, filter, validation) with tests: `npm test`. `app.js` is the interface.
 
-## Run locally
-
-Open `index.html` in a browser. No build step.
-
-## Author
-
-Malak Mohamed - [GitHub](https://github.com/malakmo7amed309)
+```bash
+python3 -m http.server
+```

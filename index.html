@@ -1,413 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fokir - Personal Landing Page</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Fokir - Personal Landing Page" />
-    <meta property="og:description" content="Personal portfolio landing page built with HTML, CSS and JavaScript." />
-    <meta property="og:url" content="https://malakmo7amed309.github.io/fokir-landing/" />
-    <meta property="og:image" content="https://malakmo7amed309.github.io/fokir-landing/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Fokir - Personal Landing Page" />
-    <meta name="twitter:description" content="Personal portfolio landing page built with HTML, CSS and JavaScript." />
-    <meta name="twitter:image" content="https://malakmo7amed309.github.io/fokir-landing/og-image.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fokir Studio - Websites and brands for small businesses</title>
+<meta name="description" content="Fokir Studio is a demo freelancer landing page: services, portfolio filter, a live project quote calculator and a contact form.">
+<meta property="og:title" content="Fokir Studio - Websites and brands for small businesses">
+<meta property="og:description" content="A demo freelancer landing page with a live quote calculator.">
+<meta property="og:image" content="https://malakmo7amed309.github.io/fokir-landing/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('fokir-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
-    <div class="landing-page">
-        
-            <div div class="navbar">
-                <a href="" class="brand">Fokir</a>
-                <ul class="content">
-                    <li><a href=""><span class="home">Home</span></a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Testimonial</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="landing-text">
-                <span>Hello i'm</span>
-                <h2>ALEX SMITH</h2>
-                <p>professional Web </p>
-            </div>
-        </div>
+<a class="skip" href="#work">Skip to work</a>
+<header id="top"><div class="wrap bar">
+  <a class="logo" href="#home">Fokir<b>.</b></a>
+  <nav id="nav" aria-label="Main"><a href="#home">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#quote">Quote</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+  <div class="tools"><button id="theme" aria-label="Switch dark or light mode">&#9680;</button><button id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button></div>
+</div></header>
+<main>
+<section id="home" class="hero"><div class="wrap hero-in">
+  <div>
+    <p class="pill">Demo studio &middot; Taking projects</p>
+    <h1>Websites and brands that look <em>finished</em>.</h1>
+    <p class="lead">Fokir Studio designs and builds fast, clear sites for small businesses. Pick a plan, see the price and the timeline, and send a brief in two minutes.</p>
+    <div class="cta"><a class="btn" href="#quote">Get a quote</a><a class="btn ghost" href="#work">See the work</a></div>
+  </div>
+  <img src="images/background.jpeg" alt="A designer sketching on a tablet next to a laptop and coffee" class="hero-img">
+</div>
+<div class="wrap stats" id="stats">
+  <div><b data-n="48">0</b><span>Projects shipped</span></div><div><b data-n="31">0</b><span>Happy clients</span></div><div><b data-n="6">0</b><span>Years of work</span></div><div><b data-n="14">0</b><span>Days, typical site</span></div>
+</div></section>
 
-        <div class="about-section">
-            <div class="container">
-                <div class="about-img">
-                    <div class="wrapper">
-                    <img src="images/cv.jpg" alt="about image">
-                    <div class="layer">
-                        <div class="social-icons">
-                            <ul>
-                                <li><a href="">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-brands fa-google"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h2>Hello,</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>   
-                    <ul class="about-ul">
-                        <li><span class="span-ul">Name: </span>Rdam smith</li>
-                        <li><span class="span-ul">Job Title: </span>UI/UX Designer</li>
-                        <li><span class="span-ul">Age: </span>26 Year</li>
-                        <li><span class="span-ul">Location: </span>United States, US</li>
-                        <li><span class="span-ul">Freelance: </span>Available</li>
-                        <li><span class="span-ul">E-mail: </span>example@gmail.com</li>
-                    </ul>                   
-                        <button class="buttons">
-                            <a href="">Download CV
-                            <i class="fa-solid fa-download"></i>
-                            </a>
-                        </button>
-                        <button class="buttons">
-                            <a href="">Hire Me</a>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                    </div>  
-                </div>
-            </div>
-            
+<section id="services" class="sec"><div class="wrap">
+  <h2>What we do</h2>
+  <div class="grid3">
+    <article class="card"><span class="ic">01</span><h3>Web design</h3><p>Clear layouts, readable type and pages that work on a phone first.</p></article>
+    <article class="card"><span class="ic">02</span><h3>Front-end build</h3><p>Hand-written HTML, CSS and JavaScript. Fast, accessible, easy to hand over.</p></article>
+    <article class="card"><span class="ic">03</span><h3>Brand identity</h3><p>Logo, colours and type, plus a one-page guide so everything matches.</p></article>
+  </div>
+</div></section>
 
+<section id="work" class="sec alt"><div class="wrap">
+  <h2>Selected work</h2>
+  <div class="chips" id="chips" role="group" aria-label="Filter projects"></div>
+  <div class="work" id="work-grid"></div>
+</div></section>
 
-        <div class="services">
-            <h2 class="header">Our Services <span class="line"></span></h2> 
-            <div class="container2">
-                <div class="cards-container">
-                    <div class="sec">
-                        <i class="fa-solid fa-pen-ruler"></i>
-                        <h2>UI/UX DESIGN</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-                    </div>
-                    <div class="sec">
-                        <i class="fa-solid fa-code"></i>
-                        <h2>APP DEVELOPMENT</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-                    </div>
-                    <div class="sec">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <h2>PRODUCT DESIGN</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-                    </div>
-                    <div class="sec">
-                        <i class="fa-solid fa-gears"></i>
-                        <h2>UI/UX DESIGN</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-                    </div>
-                </div>
-            </div>   
-            </div>      
-        
+<section id="quote" class="sec"><div class="wrap quote">
+  <div>
+    <h2>Price your project</h2>
+    <p class="muted">Pick what you need. The estimate updates as you go. This is a demo, so the numbers are examples.</p>
+    <fieldset><legend>Plan</legend><div id="plans" class="opts"></div></fieldset>
+    <div id="pages-row" hidden><label>Pages <output id="pages-out">5</output><input type="range" id="pages" min="5" max="25" value="5"></label><p class="muted small">5 pages included, 80 USD per extra page.</p></div>
+    <fieldset><legend>Extras</legend><div id="extras" class="opts"></div></fieldset>
+  </div>
+  <aside class="total" aria-live="polite"><p class="muted">Estimate</p><p class="price" id="price"></p><p id="days"></p><a class="btn" href="#contact" id="use-quote">Send this brief</a></aside>
+</div></section>
 
-            <div class="our-portfolio">
-                <h2 class="port">Our Portfolio <span class="line"></span></h2>
-                <div class="container2">
-                    <div class="links">
-                        <ul>
-                            <li><a href=""><span>ALL</span></a></li>
-                            <li><a href="">GRAPHIC</a></li>
-                            <li><a href="">WEB DESIGN</a></li>
-                            <li><a href="">BRANDING</a></li>
-                        </ul>
-                    </div>
-                    <div class="portfolio-cards">
-                        <div class="portfolio">
-                            <div class="layer">
-                                <img src="images/1.jpg" alt="">
-                            <div class="overlay">
-                                <div>
-                                    <a href="">
-                                        <i class="fa-solid fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="portfolio">
-                            <div class="layer">
-                                <img src="images/2.jpg" alt="">
-                            <div class="overlay">
-                                <div>
-                                    <a href="">
-                                        <i class="fa-solid fa-image"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="portfolio">
-                            <div class="layer">
-                                <img src="images/3.jpg" alt="">
-                            <div class="overlay">
-                                <div>
-                                    <a href="">
-                                        <i class="fa-solid fa-video"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="portfolio">
-                        <div class="layer">
-                            <img src="images/4.jpg" alt="">
-                            <div class="overlay">
-                                <div>
-                                    <a href="">
-                                        <i class="fa-solid fa-image"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="portfolio">
-                            <div class="layer">
-                                <img src="images/5.jpg" alt="">
-                            <div class="overlay">
-                                <div>
-                                    <a href="">
-                                        <i class="fa-solid fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="portfolio">
-                        <div class="layer">
-                            <img src="images/6.jpg" alt="">
-                            <div class="overlay">
-                                <div>
-                                    <a href="">
-                                        <i class="fa-solid fa-image"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>                                    
-                    </div>
-                </div>
-            </div>
+<section id="faq" class="sec alt"><div class="wrap narrow"><h2>Questions</h2><div id="faq-list"></div></div></section>
 
-
-
-
-
-
-
-            <div class="likes-section">
-            <diV class="container">
-                <div class="likes">
-                    <div>
-                        <a href="">
-                            <i class="fa-solid fa-users"></i>
-                        </a>
-                    </div>
-                    <h2>200</h2>
-                    <p>Team members</p>
-                </div>
-                <div class="likes">
-                    <div>
-                        <a href="">
-                            <i class="fa-solid fa-file-lines"></i>
-                        </a>
-                    </div>
-                    <h2>345</h2>
-                    <p>Complete Projects</p>
-                </div>
-                <div class="likes">
-                    <div>
-                        <a href="">
-                            <i class="fa-solid fa-cloud-arrow-down"></i>
-                        </a>
-                    </div>
-                    <h2>1800</h2>
-                    <p>Files Downloaded</p>
-                </div>
-                <div class="likes">
-                    <div>
-                        <a href="">
-                            <i class="fa-solid fa-mug-saucer"></i>
-                        </a>
-                    </div>
-                    <h2>1200</h2>
-                    <p>Lines Of Code</p>
-                </div>
-            </diV>
-            </div>
-        
-
-
-
-            <div class="feedback">
-                <h2 class="client">Client's Feedback <span class="line"></span></h2>
-                <div class="container2">
-                    <div class="alex">
-                        <img src="images/feedback.jpg" alt="">
-                    </div>
-                    <div class="fed">
-                        <div class="container2">
-                            <h2>Alex ander</h2>
-                        <h4>
-                            
-                                <a href="">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    United
-                                </a>
-                        </h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eveniet ad minima sunt nisi, veritatis ex fugit minus debitis quod 
-                            repudiandae. Doloribus aliquid atque nostrum omnis laudantium soluta fugit 
-                            assumenda eius similique voluptate. Culpa sapiente consectetur doloremque 
-                            temporibus ipsum dolorum cupiditate quia obcaecati est, beatae quidem earum
-                            mollitia repellat! Perspiciatis maiores vitae, nulla et officiis illo soluta natus 
-                            !</p>
-                            <div class="reating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="our-blog">
-                <h2 class="blog">Our Blog <span class="line"></span></h2>
-                <div class="container2">
-                    <diV class="iframe">
-                        <a href=""><img src="images/our blog 1.jpg" alt=""></a>
-                        <span>23 November, 2015</span>
-                        <h2><a href="">web design Blog Post</a></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
-                        <a href="" class="more">READ MORE 
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </diV>
-                    <div class="iframe">
-                        <iframe width="500" height="222" src="https://www.youtube.com/embed/ACOiGZoqC8w?si=fMilKjfqDcM4M15O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!-- <iframe width="390" height="218" src="https://www.youtube.com/embed/uVju5--RqtY?si=mZOHbCzpEcNOH0ZL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                        <span>20 April, 2018</span>
-                        <h2><a href="">development Blog Post</a></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
-                        <a href="" class="more">READ MORE 
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-    
-                    </div>
-                    <div class="iframe">
-                        <a href=""><img src="images/our blog 3.jpg" alt=""></a>
-                        <span>17 May, 2017</span>
-                        <h2><a href="">Full Width Blog Post</a></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
-                        <a href="" class="more">READ MORE 
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="contact-us">
-                <h2 class="cont">Contact Us <span class="line"></span></h2>
-                <div class="container2">
-                    <div class="form">
-                        <div class="text">
-                            <input type="text" required placeholder="Name" name="name">
-                            <input type="email" required placeholder="Email" name="email">
-                        </div>                                            
-                        <div class="subject">
-                            <input type="text" required placeholder="subject" name="subject">
-                        </div>
-                        <div class="area">
-                            <textarea required placeholder="Message For Me"></textarea>
-                        </div>
-                        <button class="but">SEND MESSAGE</button>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="footer">
-                <div class="container2">
-                    <div class="social">
-                        <div class="icons">
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-brands fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-brands fa-google"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="par">
-                        <p>
-                            Copy Right 2018 © By <span><a href="">Theme-Fair</a></span>
-                            All Rights Reserved
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        
-    
-</body>
-</html>
+<section id="contact" class="sec"><div class="wrap narrow">
+  <h2>Tell us about your project</h2>
+  <form id="form" novalidate>
+    <label>Name<input id="f-name" autocomplete="name"><small class="err" id="e-name"></small></label>
+    <label>Email<input id="f-email" type="email" autocomplete="email"><small class="err" id="e-email"></small></label>
+    <label>Message<textarea id="f-msg" rows="5"></textarea><small class="err" id="e-message"></small></label>
+    <button class="btn">Open my email app</button>
+    <p class="muted small" id="f-note" role="status">This opens your email app with the message filled in. Nothing is stored. Demo address, not monitored.</p>
+  </form>
+</div></section>
+</main>
+<footer><div class="wrap"><p>Fokir Studio is a demo by Malak Mohamed. Names, numbers and projects are placeholders.</p><a href="#top">Back to top</a></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="logic.js"></script><script src="app.js"></script>
+</body></html>
